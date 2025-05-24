@@ -1,7 +1,7 @@
 
 # API Script Executor - Cross-Platform Compatible
 param(
-    [string]$ScriptsPath = "./api-ps-files",
+    [string]$ScriptsPath = "api-ps-files",
     [string]$LogsPath = "logs"
 )
 
@@ -19,7 +19,7 @@ $failedScripts = @()
 $totalScripts = 0
 $passedScripts = 0
 $failedCount = 0
-$failedLogFile = "$LogsPath/failed_apis_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
+$failedLogFile = "$LogsPath\failed_apis_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
 
 "API Failed Calls Log - $(Get-Date)" | Out-File -FilePath $failedLogFile
 "============================================================" | Add-Content -Path $failedLogFile
