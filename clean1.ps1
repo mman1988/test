@@ -1,7 +1,7 @@
 
 # API Script Executor - Cross-Platform Compatible
 param(
-    [string]$ScriptsPath = "scripts",
+    [string]$ScriptsPath = "./api-ps-files",
     [string]$LogsPath = "logs"
 )
 
